@@ -41,7 +41,7 @@
 </head>
 <body>
     <div class="barrita" id="barrita">
-        <div id="progreso" class="progreso"><span id="texto"></span></div>
+        <div id="progreso" class="progreso"><span id="texto">0%</span></div>
     </div>
     <div>
         <button class="btn btn-light" onclick="incrementar()">+</button>
@@ -65,6 +65,7 @@
         function resetear(){
             porcentaje = 0
             document.querySelectorAll(".progreso")[0].style.width="0%";
+            document.querySelector("#texto").innerHTML = "0%"
         }
     
     </script>
